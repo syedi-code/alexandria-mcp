@@ -1,0 +1,38 @@
+# A deployment of this server. The ids below are placeholders: fill in your
+# own, or delete a binding you do not have. `account_id` is deliberately
+# absent — set CLOUDFLARE_ACCOUNT_ID in the environment instead, so a fork
+# carries no one else's account.
+
+name = "alexandria-mcp"
+main = "src/worker/index.ts"
+compatibility_date = "2025-08-24"
+compatibility_flags = ["nodejs_compat"]
+
+# Works, documents and page text.
+[[d1_databases]]
+binding = "DB"
+database_name = "alexandria"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+# The FTS5 page index. Without it, search_pages reports itself unavailable and
+# every other tool still works.
+[[d1_databases]]
+binding = "SEARCH"
+database_name = "alexandria-search"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+# Source PDFs and rendered page images. Without it, view_page has no source.
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "alexandria-files"
+
+[vars]
+# LIBRARY_DESCRIPTION is the one line shown to the model above the reading
+# practice. Leave it unset for the default.
+
+# TEAM_DOMAIN, MCP_POLICY_AUD and MCP_SERVICE_TOKEN_ID are secrets:
+#   npx wrangler secret put TEAM_DOMAIN
+#   npx wrangler secret put MCP_POLICY_AUD
+#   npx wrangler secret put MCP_SERVICE_TOKEN_ID
+#
+# LOCAL_DEV belongs in .dev.vars and nowhere else. See docs/HOSTING.md.

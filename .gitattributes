@@ -1,0 +1,5 @@
+# One line ending in the repository, whatever the checkout platform.
+* text=auto eol=lf
+
+# Generated: keep it out of diffs and out of language statistics.
+package-lock.json  linguist-generated=true -diff

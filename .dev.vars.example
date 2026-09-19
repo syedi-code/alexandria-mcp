@@ -1,0 +1,4 @@
+# Copy to .dev.vars. Never set LOCAL_DEV as a deployed secret: it stands in for
+# Cloudflare Access, and nothing in a request can tell a local worker from a
+# deployed one.
+LOCAL_DEV=true
