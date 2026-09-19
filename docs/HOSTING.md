@@ -42,10 +42,9 @@ mistake.
 ## Running your own
 
 You need a Cloudflare account, a D1 database holding a library in
-[alexandria's schema](https://github.com/syedi-code/alexandria.socialeating.studio),
-and an R2 bucket with the source PDFs. If you have books but not that schema,
-write your own `Library` instead and skip D1 entirely — see
-[EXTENDING.md](EXTENDING.md).
+[alexandria's schema](https://github.com/syedi-code/alexandria), and an R2
+bucket with the source PDFs. If you have books but not that schema, write your
+own `Library` instead and skip D1 entirely — see [EXTENDING.md](EXTENDING.md).
 
 ### 1. Bindings
 

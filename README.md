@@ -73,12 +73,11 @@ Writing your own library, or adding a sixth tool, is
 
 ## Where this came from
 
-It was part of
-[alexandria](https://github.com/syedi-code/alexandria.socialeating.studio),
-which is still the backend the hosted instance runs inside — that deployment
-serves `/api/mcp` from its own worker, with the same tools and the same Access
-policy. This repository is where the server is developed, and what you get if
-you want one of your own.
+It was part of [alexandria](https://github.com/syedi-code/alexandria), which is
+still the backend the hosted instance runs inside — that deployment serves
+`/api/mcp` from its own worker, with the same tools and the same Access policy.
+This repository is where the server is developed, and what you get if you want
+one of your own.
 
 ## License
 
