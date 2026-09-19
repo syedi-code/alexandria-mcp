@@ -19,7 +19,8 @@ diverges.
 
 ## The hosted server
 
-One instance is hosted, over one person's library:
+One instance is hosted, over one person's library, inside the
+[alexandria](https://alexandria.socialeating.studio) deployment:
 
 ```
 https://alexandria.socialeating.studio/api/mcp
