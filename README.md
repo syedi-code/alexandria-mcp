@@ -28,9 +28,8 @@ https://alexandria.socialeating.studio/api/mcp
 **It is not open to the public, and there is no sign-up.** It sits behind a
 Cloudflare Access application whose only policy admits a single service token,
 held by the maintainer. Access rejects a request without that token before the
-worker sees it. Asking for a token is reasonable and will usually be declined:
-the library is scanned books, and lending it out is a copyright question, not a
-capacity one.
+worker sees it. It serves one person's library and is not offered to anyone
+else.
 
 What is open is this repository. Point it at your own library and the same tools
 work. See [`docs/HOSTING.md`](docs/HOSTING.md) for both — how the hosted
