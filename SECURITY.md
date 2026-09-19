@@ -6,7 +6,7 @@ Open a
 [private security advisory](https://github.com/syedi-code/alexandria-mcp/security/advisories/new).
 Please do not open a public issue for a vulnerability.
 
-There is no bounty and no SLA.
+There is no bounty and no SLA. Reports are read and answered as time allows.
 
 ## What the server assumes
 
@@ -37,7 +37,8 @@ Understood and accepted for a single-token deployment. Each would need work
 before the Access policy admitted a second holder:
 
 - **No rate limiting and no quota.** A token holder can read the library as fast
-  as Cloudflare will carry it. The token is trusted because one person holds it.
+  as Cloudflare will carry it. The token is trusted because the deployment
+  issues exactly one.
 - **`view_page` pulls whole PDFs into the isolate** to cut one page out, for
   documents with no rendered page image. Anything over 24 MB refuses rather than
   exhausting the isolate, which bounds the damage but is not a quota.
