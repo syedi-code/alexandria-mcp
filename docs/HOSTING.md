@@ -25,10 +25,8 @@ There is no OAuth, no registration, and no anonymous access. Access is granted
 by handing someone the token, and revoked by deleting it, which takes effect
 immediately for everyone holding it.
 
-The library it serves is scanned books. Most of them are in copyright, so the
-answer to "can I have a token" is usually no, and that is a licensing constraint
-rather than a technical one. Running your own instance over your own library has
-no such problem, and is what this repository is for.
+It serves one person's library and is not offered to anyone else. Running your
+own instance over your own books is what this repository is for.
 
 ### What it can do
 
